@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import { Counter, Techs } from '../components'
 
 export default function Home() {
   return (
@@ -9,15 +10,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+
+
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <h1 className="text-blue-500 font-bold text-3xl">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+
 
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
+
+        <Counter />
+
+        <Techs />
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
