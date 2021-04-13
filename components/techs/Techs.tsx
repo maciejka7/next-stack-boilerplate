@@ -15,6 +15,9 @@ const Techs = () => {
                 // handle error
                 console.log(error);
             })
+        return () => {
+            setData([])
+        }
     }, [])
 
     return (
